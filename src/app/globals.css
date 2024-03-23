@@ -11,8 +11,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 30, 30, 30;
+    --background-end-rgb: 30, 30, 30;
   }
 }
 
@@ -24,6 +24,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.8181818181818181rem + 0.9090909090909091vw, 3rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  line-height:1.6;
+}
+
+p {
+  font-weight:300;
+  line-height: 1.6;
 }
 
 @layer utilities {
